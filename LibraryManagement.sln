@@ -1,9 +1,10 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72D-47B6-A68D-7590B98EB39B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryUI", "src\LibraryUI\LibraryUI.csproj", "{9371520F-71B0-413A-853D-76731AFDBA13}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryCommon", "src\LibraryCommon\LibraryCommon.csproj", "{8F6B0897-2BBD-4403-B83B-7F9A178FB8E2}"
 EndProject
@@ -13,7 +14,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryDAL", "src\LibraryDA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryBLL", "src\LibraryBLL\LibraryBLL.csproj", "{D7894135-D34A-4CFB-B503-53400609C088}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryUI", "src\LibraryUI\LibraryUI.csproj", "{9371520F-71B0-413A-853D-76731AFDBA13}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryTests", "tests\LibraryTests\LibraryTests.csproj", "{FF046F9A-7A36-40AC-A5DC-2434E5216D47}"
 EndProject
