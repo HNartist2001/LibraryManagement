@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\LibraryBLL\LibraryBLL.csproj" />
+    <ProjectReference Include="..\LibraryDAL\LibraryDAL.csproj" />
+    <ProjectReference Include="..\LibraryDTO\LibraryDTO.csproj" />
+    <ProjectReference Include="..\LibraryCommon\LibraryCommon.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationHighDpiMode>DpiUnaware</ApplicationHighDpiMode>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+</Project>

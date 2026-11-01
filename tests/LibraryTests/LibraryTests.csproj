@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <!--
+      Chạy test bằng MSTest runner (Microsoft.Testing.Platform) trong cùng process,
+      thay vì vstest + testhost. Ổn định hơn trên máy bị hạn chế quyền, và vẫn
+      dùng được "dotnet test" nhờ TestingPlatformDotnetTestSupport.
+    -->
+    <EnableMSTestRunner>true</EnableMSTestRunner>
+    <OutputType>Exe</OutputType>
+    <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+    <PackageReference Include="MSTest" Version="3.6.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\LibraryBLL\LibraryBLL.csproj" />
+    <ProjectReference Include="..\..\src\LibraryDTO\LibraryDTO.csproj" />
+    <ProjectReference Include="..\..\src\LibraryDAL\LibraryDAL.csproj" />
+    <ProjectReference Include="..\..\src\LibraryCommon\LibraryCommon.csproj" />
+  </ItemGroup>
+
+</Project>
